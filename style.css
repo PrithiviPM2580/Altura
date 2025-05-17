@@ -1,0 +1,690 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Kumar One", serif;
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rebeccapurple; */
+}
+.logo figure {
+  height: 25px;
+  width: 25px;
+  object-fit: cover;
+}
+.logo p {
+  display: none;
+}
+
+main {
+  min-height: 100svh;
+  width: 100%;
+  padding: 0 1em;
+  background-color: FFFFFF;
+}
+.logo {
+  font-size: 1rem;
+}
+header {
+  width: 100%;
+  /* background-color: red; */
+}
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 1em;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+}
+.navs {
+  display: none;
+}
+.nav-links {
+  display: none;
+}
+.menu {
+  font-size: 1.2rem;
+}
+.hero {
+  position: relative;
+  width: 100%;
+  /* background-color: red; */
+  padding-bottom: 2em;
+}
+.hero h2 {
+  margin: 0 auto;
+  width: 80%;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.hero h1 {
+  font-size: min(20vw, 6rem);
+  text-align: center;
+}
+.hero-chairs {
+  margin-top: -6em;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: blue; */
+  align-items: center;
+  justify-content: center;
+}
+.hero-chair1 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.chair-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.chair-overlay .overlay {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80%;
+  width: 80%;
+  border-radius: 50%;
+  background-color: #f6f6f6;
+  z-index: -1;
+}
+.hero-chair1 h4 {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.hero-chair2 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.hero-chair2 .chair-overlay .chair-img {
+  height: 50%;
+  width: 50%;
+}
+.hero-chair2 .chair-overlay {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-chair2 .chair-overlay .overlay {
+  margin-top: -1em;
+  height: 100%;
+  width: 35%;
+  background-color: #f6f6f6;
+  border-radius: 50px;
+}
+.hero-chair2 h3 {
+  font-size: 1rem;
+  text-align: center;
+}
+.hero-chair2 h4 {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.hero-chair3 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  z-index: 0;
+}
+.hero-chair3 .chair-overlay .chair-img {
+  height: 50%;
+  width: 50%;
+}
+.hero-chair3 .chair-overlay {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-chair3 .chair-overlay .overlay {
+  margin-top: -1em;
+  height: 100%;
+  width: 55%;
+  background-color: #f6f6f6;
+  border-radius: 50%;
+}
+.hero-chair3 h3 {
+  font-size: 1rem;
+  text-align: center;
+}
+.hero-chair3 h4 {
+  font-size: 0.8rem;
+  text-align: center;
+  margin-bottom: 2em;
+}
+.hero-chair3 .btns-type {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-bottom: 2em;
+}
+.hero-chair3 .btns-type .type-btn {
+  width: 100%;
+  padding: 0.6em 1.2em;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 50px;
+  text-align: center;
+}
+.hero button {
+  display: block;
+  margin: 0 auto;
+  padding: 0.8em 1.4em;
+  border: none;
+  outline: none;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50px;
+  width: 100%;
+  font-family: "Kumar One", serif;
+}
+.hero .design {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2em;
+}
+.design h1 {
+  font-size: 1.6em;
+}
+.design-pos {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.design-pos .design-left figure img {
+  scale: 1.2;
+}
+.design-pos .design-left figure {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.design-right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.design-right .design-desc {
+  height: 100%;
+  width: 100%;
+}
+.design-right .design-desc .overlay {
+  width: 100%;
+  height: 80px;
+  border-radius: 10px;
+  background-color: #f6f6f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.design-right .design-desc figure {
+  height: 50px;
+  width: 50px;
+}
+.design-right .design-desc h3 {
+  text-align: center;
+  margin-top: 1em;
+}
+.about {
+  width: 100%;
+  height: 100%;
+  padding-block: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.about h1 {
+  font-size: 1.6em;
+  line-height: 120%;
+}
+.about-top .text h2 {
+  font-size: 1.2rem;
+}
+.about-top .text h3 {
+  font-size: 0.8rem;
+}
+.about-bottom .text h2 {
+  font-size: 1.2rem;
+}
+.about-bottom .text h3 {
+  font-size: 0.8rem;
+}
+
+.discover {
+  width: 100%;
+  height: 100%;
+  padding-block: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.discover .discover-title h1 {
+  font-size: 1.6em;
+  line-height: 120%;
+}
+.discover .discover-title h4 {
+  font-size: 0.8rem;
+  margin-top: 1em;
+}
+.discover-collection {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.discover-collection .collections {
+  height: max-content;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.discover-collection .collections .collections-item {
+  width: 100%;
+  border-top: 1px solid black;
+  border-radius: 10px;
+  padding: 1em;
+}
+.discover-collection .collections .collections-item .collection-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.collections-item h2 {
+  text-align: center;
+  font-size: 1rem;
+}
+.collections-item h3 {
+  text-align: center;
+  font-size: 0.8rem;
+}
+.collection-btn h4 {
+  font-size: 0.6rem;
+}
+.collection-btn button {
+  padding: 0.4rem 1.2rem;
+  background-color: #000;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  color: #fff;
+  font-family: "Kumar One", serif;
+  font-size: 0.6rem;
+}
+.contact {
+  width: 100%;
+  height: 100%;
+  padding-block: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 8em;
+}
+.contact h1 {
+  font-size: 1.6em;
+  line-height: 120%;
+  text-align: center;
+}
+.contact .contact-overlay {
+  position: relative;
+  height: 60vh;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+.contact .contact-overlay .overlay-image {
+  position: absolute;
+  top: -40%;
+}
+.contact .contact-overlay p {
+  font-size: 0.6rem;
+  text-align: center;
+  width: 85%;
+  margin-top: 18em;
+}
+.contact .contact-overlay .contact-form {
+  display: flex;
+  padding: 0.5em 1em;
+  border: 1px solid #dbdbdc;
+  gap: 1em;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact .contact-overlay .contact-form input {
+  outline: none;
+  border: none;
+  color: #dbdbdbcb;
+  font-family: "Kumar One", serif;
+  background-color: transparent;
+}
+.contact .contact-overlay .contact-form .letter img {
+  background-color: blue;
+}
+hr {
+  margin-block: 2em;
+}
+
+footer {
+  width: 100%;
+  padding-bottom: 2em;
+}
+footer .footer-info {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+footer .footer-details {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1em;
+}
+footer h4 {
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+/* Responsiveness */
+
+@media (min-width: 768px) {
+  main {
+    padding-inline: 3em;
+  }
+  .navs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+  }
+  .nav-links {
+    display: flex;
+    gap: 2em;
+  }
+  .nav-links button {
+    border: 1.5px solid black;
+    background: transparent;
+    padding: 0.2em 1em;
+    border-radius: 6px;
+    font-family: "Kumar One", serif;
+    font-size: 1rem;
+  }
+  .nav-links .nav-link {
+    height: 35px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    border-radius: 6px;
+  }
+  .nav-links .nav-link a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  nav .logo .p {
+    display: block;
+    font-size: 1.5rem;
+    line-height: 1;
+    padding-top: 5px;
+  }
+  nav .menu {
+    display: none;
+  }
+  .hero {
+    min-height: 100svh;
+    height: 100%;
+    position: relative;
+    margin-top: 2em;
+  }
+  .hero h2 {
+    font-size: 2rem;
+    line-height: 120%;
+  }
+  .hero h1 {
+    font-size: 20rem;
+    line-height: 130%;
+  }
+  .hero-chairs {
+    position: relative;
+  }
+  .hero-chair1 {
+    position: relative;
+    /* background-color: blue; */
+    margin-top: -14em;
+  }
+  .hero-chair1 .chair-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .chair-img {
+    height: 35%;
+    width: 35%;
+    z-index: 100;
+  }
+  .hero-chair1 h4 {
+    position: absolute;
+    width: 25%;
+    top: 55%;
+    text-align: left;
+    left: 2.5%;
+  }
+  .hero-chair1 .chair-overlay .overlay {
+    height: 100%;
+    width: 30%;
+    background-color: #f6f6f6;
+  }
+  .hero-chair2 {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    right: 0;
+    top: 10%;
+    z-index: 100;
+  }
+
+  .hero-chair2 .chair-img {
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+  }
+  .hero-chair2 h3,
+  .hero-chair2 h4 {
+    text-align: left;
+  }
+  .hero-chair3 {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    width: 35%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hero-chair3 .chair-overlay {
+    height: 40%;
+    width: 60%;
+    transform: rotate(10deg);
+  }
+  .hero button {
+    display: block;
+    margin: 0 auto;
+    padding: 1em 4em;
+    border: none;
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50px;
+    font-family: "Kumar One", serif;
+    width: max-content;
+    margin-top: 7em;
+  }
+  .btns-type .type-btn:nth-child(1) {
+    margin-left: 1em;
+  }
+  .btns-type .type-btn:nth-child(3) {
+    margin-left: 1em;
+  }
+  .design {
+    margin-top: 5em;
+  }
+  .design h1 {
+    font-size: 3rem;
+  }
+  .design .design-pos {
+    flex-direction: row;
+  }
+  .design .design-pos > div {
+    flex: 1;
+  }
+  .design .design-pos .design-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .design .design-pos .design-right .overlay {
+    display: block;
+    margin: 0 auto;
+    height: 50%;
+    width: 16%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about {
+    margin-top: 5em;
+    /* background-color: red; */
+  }
+  .about h1 {
+    font-size: 3rem;
+  }
+  .about .about-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .about .about-top .text {
+    width: 50%;
+  }
+  .about .about-top .text h3 {
+    width: 50%;
+  }
+  .about .about-top figure {
+    height: 10%;
+    width: 10%;
+  }
+  .about .about-bottom {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .about .about-bottom .text {
+    width: 50%;
+    padding-left: 22em;
+  }
+  .about .about-bottom figure {
+    height: 10%;
+    width: 10%;
+  }
+  .about .about-bottom .text h3 {
+    width: 100%;
+  }
+  .discover .discover-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .discover .discover-title h1 {
+    font-size: 3rem;
+  }
+  .discover .discover-title h4 {
+    width: 30%;
+  }
+  .discover-collection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .contact h1 {
+    font-size: 3rem;
+  }
+  .contact .contact-overlay {
+    height: 80vh;
+  }
+  .contact .contact-overlay p {
+    width: 60%;
+  }
+  .contact .contact-overlay .overlay-image {
+    height: 400px;
+    width: 400px;
+  }
+  footer .footer-info {
+    display: flex;
+    flex-direction: row;
+  }
+  footer .footer-info > div {
+    flex: 1;
+  }
+  footer .footer-details {
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+  }
+}
