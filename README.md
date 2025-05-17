@@ -6,7 +6,7 @@
 
 ## 🔗 Live Demo
 
-👉 [View the website](https://prithivipm2580.github.io/SolidBase/) 
+👉 [View the website](https://prithivipm2580.github.io/Altura/) 
 ## 🎨 Figma Design
 
 🔗 [View the design on Figma](https://www.figma.com/design/XyCdM4sxY7vL18u4hn0rxM/Untitled?node-id=0-1&t=kzVceTvHHjB7cK2e-1) 
@@ -15,7 +15,7 @@
 
 - **Modern, Elegant Aesthetic**: Clean and focused design to reflect the luxury furniture brand.
 - **Static and Lightweight**: Built with pure HTML and CSS for fast performance.
-- **Responsive Layout** *(Planned)*: Adaptive design for all screen sizes.
+- **Responsive Layout** *(Planned)*: Adaptive design for mobile and desktop.
 - **Custom Fonts & Icons**: Uses **Google Fonts** and **Remix Icon** for a polished look.
 - **Hero & Highlight Sections**: Includes hero image, design philosophy, discovery callout, and brand story.
 - **Contact Form** *(UI only)*: A styled newsletter subscription form.
